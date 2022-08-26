@@ -2,6 +2,8 @@
 
 If you're streaking ahead, you can always try out the bonus activity
 
+This activity is an extension of the following workshop: https://github.com/mxcrawford/Mendix-AWS-Rekognition
+
 # Bonus 1
 
 ## Change your app and use it to detect celebrity faces!
