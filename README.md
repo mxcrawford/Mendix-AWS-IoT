@@ -4,6 +4,16 @@ If you're streaking ahead, you can always try out the bonus activity
 
 This activity is an extension of the following workshop: https://github.com/mxcrawford/Mendix-AWS-Rekognition
 
+- [Mendix AWS IoT Bonus](#mendix-aws-iot-bonus)
+- [Bonus 1](#bonus-1)
+  - [Change your app and use it to detect celebrity faces!](#change-your-app-and-use-it-to-detect-celebrity-faces)
+- [Bonus 2](#bonus-2)
+  - [Publish messages using AWS IoT Core & MQTT](#publish-messages-using-aws-iot-core--mqtt)
+    - [Setup your IoT Core thing](#setup-your-iot-core-thing)
+    - [Build for Publishing messages](#build-for-publishing-messages)
+    - [Test your publishing](#test-your-publishing)
+    - [Build for Subscribe](#build-for-subscribe)
+    - [Test Subscribe](#test-subscribe)
 # Bonus 1
 
 ## Change your app and use it to detect celebrity faces!
@@ -12,7 +22,6 @@ You will need to do a few things:
 1. Train a new model with some celebrity faces
 2. Update the Nanoflow "TakePicture" to use your new model
 3. If you want, update your UI to tell the User which Celebrity is in the picture
-
 
 # Bonus 2
 
@@ -201,11 +210,17 @@ Final result:
 * Click Publish
 * You should now see your message show up below
 
-<img src="readme-img/mqtt-test.gif"/>
+<img src="readme-img/mqtt-test.gif"/>- [Mendix AWS IoT Bonus](#mendix-aws-iot-bonus)
 
 1. Create an Entity in the Domain model that is NON-PERSISTENT Called **Comment** 
 2. Add an attribute to that entity that can store a String attribute **Message**
+
+<img src="readme-img/comment1.gif"/>
+
 3.  Create a DSO Nanoflow like we did in the Rekognition project that CREATES and RETURNS an instance of the **Comment** Entity
+
+<img src="readme-img/dso-comment.gif"/>
+
 4.  Place a **Data View** on the **Home_IoT_Start** start page and select the new DSO (Data Source) Nanoflow as the data source
 5.   Add a text box widget from the **Toolbox** that can help capture the message attribute
 6.   Add a **Microflow** button inside the **Data View** in order to send the message
